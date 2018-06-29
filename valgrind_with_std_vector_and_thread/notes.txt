@@ -1,0 +1,7 @@
+#	2018-06-30
+
+#	compile
+g++ -v -std=c++11 -o foo foo.c++ -pthread
+
+#	check memory leak command
+valgrind --tool=memcheck --leak-check=full ./foo
