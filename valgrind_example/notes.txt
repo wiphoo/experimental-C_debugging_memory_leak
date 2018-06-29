@@ -1,0 +1,7 @@
+#	2018-06-30
+
+#	compile command
+gcc foo.c -o foo
+
+#	run for checking the memory leak
+valgrind --leak-check=yes ./foo
